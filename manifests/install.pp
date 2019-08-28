@@ -12,7 +12,7 @@ class grafana::install inherits grafana {
       }
 
       apt::source { 'grafana':
-        location => $grafaba::params::apt_source_location,
+        location => $grafana::params::apt_source_location,
         release  => 'stable',
         require  => Apt::Key['grafana'],
       }
