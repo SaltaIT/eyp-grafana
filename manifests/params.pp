@@ -9,7 +9,7 @@ class grafana::params {
     {
       case $::operatingsystemrelease
       {
-        /^[5-8].*$/:
+        /^[7-8].*$/:
         {
           fail('unimplemented')
         }
@@ -27,7 +27,7 @@ class grafana::params {
           $apt_key = '54754BA7A63B8C9E73D8BFCB81140F31DD4C2D55'
           case $::operatingsystemrelease
           {
-            /^1[468].*$/:
+            /^1[68].*$/:
             {
             }
             default: { fail("Unsupported Ubuntu version! - ${::operatingsystemrelease}")  }
