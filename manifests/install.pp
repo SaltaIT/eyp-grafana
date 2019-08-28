@@ -2,7 +2,7 @@ class grafana::install inherits grafana {
 
   if($grafana::manage_package)
   {
-    if($grafaba::params::apt_source_location!=undef)
+    if($grafana::params::apt_source_location!=undef)
     {
       include ::apt
 
