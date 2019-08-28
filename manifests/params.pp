@@ -1,7 +1,7 @@
 class grafana::params {
 
   $package_name='grafana'
-  $service_name='grafana-server'
+  $service_name='grafana'
 
   case $::osfamily
   {
